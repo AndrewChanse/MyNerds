@@ -20,10 +20,10 @@
 /*--------More Iconic-----------*/
 [class^="icon-"]:before, [class*="icon-"]:before {
 	font-family: "symbols-nerds";
+	font-size: 28px;
 	font-style: normal;
 	font-weight: normal;
 	speak: none;
-
 	display: inline-block;
 	text-decoration: inherit;
 	width: 1em;
@@ -61,6 +61,7 @@
 	font-family: "Roboto", "Arial", sans-serif;
 	font-weight: 500;
 	font-size: 16px;
+	letter-spacing: -0.2px;
 	line-height: 22px;
 	color: #283136;
 	background: #fff;
@@ -86,6 +87,7 @@ h2 {
 h3,
 figure {
 	margin: 0;
+	padding: 0;
 }
 
 p {
@@ -122,19 +124,19 @@ fieldset {
 .catalog-header-container {
 	padding-top: 27px;
 	width: 880px;
-	min-height: 301px;
+	min-height: 300px;
 	margin: 0 auto;
-	box-shadow: 0 0 0 1px red;
-	/*background-color: rgba(203,251,1,0.2);*/
+	/*box-shadow: 0 0 0 1px red;
+	background-color: rgba(203,251,1,0.2);*/
 }
 
 h1.welcome {
-	margin: 68px auto;
+	margin: 59px auto;
 	width: 655px;
 	font-size: 40px;
 	font-weight: 500;
 	line-height: 48px;
-	/*letter-spacing: 0.001px;*/
+	letter-spacing: -0.3px;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -159,14 +161,13 @@ h1.welcome {
 
 .site-navigation {
 	float: right;
-	margin-top: 24px;
+	margin-top: 26px;
 	/*box-shadow: 0 0 0 1px #cbfb00;
 	background-color: rgba(125,255,234,0.2);*/
 }
 
 .site-navigation ul li {
 	display: inline-block;
-	/*margin-right: 46px;*/
 	vertical-align: top;
 	font-size: 14px;
 	line-height: 30px;
@@ -206,12 +207,15 @@ ul.main-menu a {
 
 a.icon-basket:before {
 	content: '\62';
-	padding-right: 18px;
+	padding-right: 14px;
+	font-size: 16px;
 	opacity: 0.3;
+	vertical-align: baseline;
 } /* 'b' */
 
 .main-menu li:last-child a {
-	margin-left: 68px;
+	margin-left: 67px;
+	margin-right: 1px;
 }
 
 .main-menu li a:hover {
@@ -346,8 +350,7 @@ input[type="radio"] {
 	width: 880px;
 	margin: 0 auto;
 	padding: 0 10px;
-	box-shadow: 0 0 0 1px red
-	box-shadow: 0 0 0 1px red;
+	/*box-shadow: 0 0 0 1px red;
 	/*background-color: rgba(125,255,234,0.2);*/
 }
 
@@ -519,7 +522,6 @@ input[type="radio"] {
 	z-index: 2;
 }
 
-
 .partners {
 	font-size: 0;
 	padding-top: 45px;
@@ -547,11 +549,12 @@ input[type="radio"] {
 
 /*CATALOG FORM*/
 /*SCALE*/
+
 .price-scale-block {
-	margin-top: 20px;
+	margin-top: 22px;
+	margin-bottom: 14px;
 	display: block;
 	position: relative;
-	margin-bottom: 15px;
 	min-height: 2px;
 	padding: 39px 20px;
 	background-color: #f1f1f1;
@@ -603,6 +606,7 @@ input[type="radio"] {
 
 /*FROM-TO INPUTS*/
 .price-windows-flex {
+	/*margin-bottom: 50px;*/
 	width: 240px;
 	display: flex;
 	height: 38px;
@@ -632,76 +636,122 @@ label.to {
 
 /*RADIO & CHECKBOXES*/
 fieldset.checkers {
-	margin-top: 45px;
+	display: flex;
+	flex-direction: column;
+	margin: 50px 0 0 0;
+	padding: 0;
+	border: none;
 }
 
-.form-title {
-	font-size: 18px;
-	line-height: 18px;
-	font-weight: 500;
-	margin-bottom: 16px;
-	text-transform: uppercase;
+h3.form-title {
+ 	display: block;
+ 	margin: 1px 0 20px 0;
+ 	padding: 0;
+ 	font-size: 18px;
+ 	line-height: 18px;
+ 	text-transform: uppercase;
 }
 
-.checkers label {
-	position: relative;
-	cursor: pointer;
+input[type="checkbox"],
+input[type="radio"] {
+ 	display: none;
+}
+
+label[class*="checkers-"] {
 	display: block;
-	padding-bottom: 19px;
-}
-
-.checkers input {
-	display: none;
-}
-
-.icon-circle::before {
-	margin-right: 2px;
-	left: 0;
-	content: '\25cb';
-	font-size: 24px;
-	color: #c1c1c1;
-	vertical-align: bottom;
-} /* '○' */
-
-input[type="radio"]:checked + .icon-circle::before {
 	position: relative;
-	content: '\25cf';
-}  /*'●'*/
-
-[class^="icon-check-"]::before {
-	margin-right: 2px;
-	left: 0;
-	font-size: 24px;
-	color: #c1c1c1;
-	vertical-align: bottom;
+	padding-left: 36px;
+ 	padding-bottom: 19px;
 }
 
-input[type="checkbox"]:checked + .icon-check-off::before {
-	position: relative;
-	content: '\2611';
-	margin-left: 2px;
-	margin-right: 0;
+.checkers.radio label[class*="checkers-"]:nth-child(4) {
+	padding-bottom: 0;
+}
+
+.checkers.checkbox label[class*="checkers-"]:nth-child(4) {
+	padding-bottom: 16px;
+}
+
+span.icon-circle:before { 
+ 	position: absolute;
+ 	content: '\25cb';
+	left: 0.5px;
+	top: -4px;
+}	/* '○' */
+
+input[type="radio"]:checked + span.icon-circle:before {
+ 	position: absolute;
+ 	content: '\25cf';
+	left: 0.5px;
+	top: -4px;
+} 	/* '●' */
+
+span.icon-check-off:before { 
+ 	position: absolute;
+ 	content: '\2610';
+	left: -1px;
+	top: -3px;
+} 	/* '☐' */
+
+input[type="checkbox"]:checked + span.icon-check-off:before {
+ 	position: absolute;
+ 	content: '\2611';
+	left: 1px;
+	top: -3px;
+} 	/* '☑' */
+
+label[class*="disabled"] {
+	color: #bdbfc0;
+}
+
+label:not(.disabled):hover {
+	color: #000;
+}
+
+label:not(.disabled):hover [class^="icon-check-"]::before,
+label:not(.disabled):hover [class^="icon-circle"]::before {
+	color: #797979;
+}
+
+input[type=radio]:disabled + .icon-circle,
+input[type=checkbox]:disabled + .icon-check-off {
+    opacity: .5;
+}
+
+button.btn-show {
+	width: 155px;
+	margin-top: 38px;
+	color: #000;
+	line-height: 14px;
+	background-color: #f1f1f1;
+}
+
+button.btn-show:hover,
+a.btn-next:hover {
+	background-color: #e5e5e5;
+}
+
+button.btn-show:active,
+a.btn-next:active {
+	background-color: #d5d5d5;
 }
 
 /*.icon-check-off:before { content: '\2610'; } /* '☐' */
 /*.icon-check-on:before { content: '\2611'; } /* '☑' */
 
 
-
-
-
 /*CATALOG MAIN*/
 .catalog-container {
 	width: 880px;
 	margin: 0 auto;
-	box-shadow: 0 0 0 1px red
+	/*box-shadow: 0 0 0 1px red;*/
 	/*background-color: rgba(125,255,234,0.2);*/
 }
 
 .shop-gallery {
 	padding-top: 80px;
-	box-shadow: 0 0 0 1px teal;
-	background-color: rgba(249,255,149,0.2);
+	/*box-shadow: 0 0 0 1px teal;
+	background-color: rgba(249,255,149,0.2);*/
 }
 
 .options {
@@ -726,7 +776,7 @@ input[type="checkbox"]:checked + .icon-check-off::before {
 .catalog-sorting {
 	display: flex;
 	flex-basis: 100%;
-	margin-bottom: 22px;
+	margin-bottom: 20px;
 	align-items: center;
 	font-size: 12px;
 	line-height: 18px;
@@ -734,7 +784,8 @@ input[type="checkbox"]:checked + .icon-check-off::before {
 }
 
 .flex-title {
-	margin-right: 41px;
+	margin-left: -3px;
+	margin-right: 43px;
 }
 
 [class*="flex-option"] {
@@ -757,6 +808,7 @@ input[type="checkbox"]:checked + .icon-check-off::before {
 
 .arrow-down.active {
 	color: #00ca74;
+	margin-right: 3px;
 }
 
 .arrow-down::before {
@@ -778,6 +830,7 @@ a.catalog-item {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 18px;
+	/*letter-spacing: 0.01em;*/
 	text-align: center;
 	color: #283136;
 	text-decoration: none;
@@ -790,6 +843,10 @@ a.catalog-item {
 	font-weight: 500;
 	color: #000;
 	text-transform: uppercase;
+}
+
+.catalog-item p {
+	margin-bottom: 30px;
 }
 
 .catalog-item:nth-child(5) p {
@@ -814,7 +871,8 @@ a.catalog-item {
 	content: "•••";
 	color: #fff;
 	font-size: 40px;
-	top: 8px;
+	letter-spacing: 0.07em;
+	top: 7px;
 	left: 9px;
 }
 
@@ -851,6 +909,7 @@ a.catalog-item {
 	content: "•••";
 	color: #fff;
 	font-size: 40px;
+	letter-spacing: 0.07em;
 	top: 8px;
 	left: 9px;
 }
@@ -858,10 +917,9 @@ a.catalog-item {
 .catalog-item-window {
 	display: block;
 	position: absolute;
-	padding: 34px 20px 30px 20px;
+	padding: 36px 20px 30px 20px;
 	width: 160px;
-	height: 136px;
-	/*text-align: center;*/
+	height: 134px;
 	background-color: #fff;
 	top: 50px;
 	left: 20px;
@@ -912,7 +970,7 @@ button.btn-price {
 	height: 416px;
 	width: 1200px;
 	margin: 0 auto;
-	background: url("../img/map.jpg") no-repeat 50% -152px #eee;
+	background: url("../img/map.jpg") no-repeat -204px -151px #eee;
 	z-index: 1;
 }
 
@@ -920,10 +978,10 @@ button.btn-price {
 	position: relative;
 	display: inline-block;
 	left: 160px;
-	top: 88px;
-	padding: 25px 23px 26px 21px;
+	top: 90px;
+	padding: 25px 23px 26px 23px;
 	background: #fff;
-	width: 206px;
+	width: 204px;
 	min-height: 189px;
 }
 
@@ -958,8 +1016,8 @@ span.phone {
 	height: 190px;
 	content: "";
 	background-image: url("../img/map-marker.png");
-	top: 110px;
-	left: 784px;
+	top: 114px;
+	left: 839px;
 	z-index: 2;
 }
 
@@ -1014,7 +1072,7 @@ span.phone {
 	content: '\76';
 	position: absolute;
 	top: 19px;
-	left: 13px;
+	left: 18px;
 	font-size: 1.4em;
 } /* 'v' */
 
@@ -1022,7 +1080,7 @@ span.phone {
 	content: '\66'; 
 	position: absolute;
 	top: 19px;
-	left: 14px;
+	left: 18px;
 	font-size: 1.4em;
 } /* 'f' */
 
@@ -1030,7 +1088,7 @@ span.phone {
 	content: '📷'; 
 	position: absolute;
 	top: 20px;
-	left: 15px;
+	left: 19px;
 	font-size: 1.4em;
 }
 
