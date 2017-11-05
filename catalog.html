@@ -33,7 +33,7 @@
 			<aside class="options">
 				<form action="#" method="post">
 					<div class="price-diap">
-						<b class="form-title">стоимость:</b>
+						<h3 class="form-title">стоимость:</h3>
 						<div class="price-scale-block">
 								<div class="full-scale">
 									<span class="scale-range"></span>
@@ -45,49 +45,42 @@
 						</div>
 					</div>
 					<fieldset class="checkers radio">	
-						<legend class="form-title">сетка:</legend>
-						<label>
-							<input type="radio" name="layout" value="adaptive">
-							<span class="icon-circle"></span>
-						Адаптивная</label>
-						
-						<label>
-							<input type="radio" name="layout" value="fixed">
-							<span class="icon-circle"></span>
-						Фиксированная</label>
-
-						<label>
+						<h3 class="form-title">сетка:</h3>
+						<label class="checkers-label">
+							<input type="radio" name="layout" value="adaptive" checked>
+							<span class="icon-circle"></span>Адаптивная
+						</label>
+						<label class="checkers-label disabled">
+							<input type="radio" name="layout" value="fixed" disabled>
+							<span class="icon-circle"></span>Фиксированная
+						</label>
+						<label class="checkers-label">
 							<input type="radio" name="layout" value="rubber">
-							<span class="icon-circle"></span>
-						Резиновая</label>
+							<span class="icon-circle"></span>Резиновая
+						</label>
 					</fieldset>
 
 					<fieldset class="checkers checkbox">
-						<legend class="form-title">особенности:</legend>
-						<label>
+						<h3 class="form-title">особенности:</h3>
+						<label class="checkers-label">
 							<input type="checkbox" name="slider" checked>
-							<span class="icon-check-off"></span>
-									Слайдер
+							<span class="icon-check-off"></span>Слайдер
 						</label>
-						<label>
-							<input type="checkbox" name="advantages">
-							<span class="icon-check-off"></span>
-									Блок преимуществ
+						<label class="checkers-label disabled">
+							<input type="checkbox" name="advantages" disabled>
+							<span class="icon-check-off"></span>Блок преимуществ
 						</label>
-						<label>
+						<label class="checkers-label">
 							<input type="checkbox" name="news" checked>
-							<span class="icon-check-off"></span>
-									Новости
+							<span class="icon-check-off"></span>Новости
 						</label>
-						<label>
+						<label class="checkers-label">
 							<input type="checkbox" name="gallery">
-							<span class="icon-check-off"></span>
-									Галерея
+							<span class="icon-check-off"></span>Галерея
 						</label>
-						<label>
+						<label class="checkers-label">
 							<input type="checkbox" name="recycler">
-							<span class="icon-check-off"></span>
-									Корзина
+							<span class="icon-check-off"></span>Корзина
 						</label>
 					</fieldset>
 					<button type="submit" class="btn-show">ПОКАЗАТЬ</button>
