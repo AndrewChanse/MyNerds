@@ -5,6 +5,7 @@
   src: local('Roboto Light'), local('Roboto-Light'), url(http://fonts.gstatic.com/s/roboto/v16/Fl4y0QdOxyyTHEGMXX8kcRJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
+
  /*-------Iconic Fonts-----------*/
  @font-face {
 	font-family: 'symbols-nerds';
@@ -90,8 +91,10 @@ figure {
 	padding: 0;
 }
 
-p {
-	margin-top: 13px;
+[class*="slider-"] p {
+	margin-top: 17px;
+	line-height: 24px;
+	letter-spacing: -0.001em;
 	margin-bottom: 25px;
 }
 
@@ -231,7 +234,7 @@ a.icon-basket:before {
 .slider-container {
 	width: 880px;
 	position: relative;
-	padding-top: 31px;
+	padding-top: 28px;
 	margin: 0 auto;
 	background: #eee;
 }
@@ -277,19 +280,19 @@ input[type="radio"] {
 
 .slider-controls {
 	position: absolute;
-	bottom: 92px;
-	left: 440px;
+	bottom: 88px;
+	left: 406px;
 	text-align: center;
 	z-index: 2;
 }
 
 .slider-controls label {
 	display: inline-block;
-    width: 5px;
-    height: 5px;
-    margin-right: 9px;
+    width: 4px;
+    height: 4px;
+    margin-right: 3px;
     cursor: pointer;
-    border: 3px solid white;
+    border: 4px solid white;
     border-radius: 50%;
     background: #c1c1c1;
     /*box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.8);*/
@@ -376,23 +379,24 @@ input[type="radio"] {
 
 
 .offers h3 {
-	margin-top: 22px;
+	margin-top: 18px;
 	font-size: 18px;
 	line-height: 30px;
+	letter-spacing: -0.02em;
 	text-transform: uppercase;
 }
 
 .offers p {
-	font-size: 15px;
+	font-size: 0.94em;
 	font-weight: 500;
+	letter-spacing: 0.01px;
 	color: #283136;
-	margin-top: 20px;
-	margin-bottom: 23px;
+	margin-top: 13px;
+	margin-bottom: 27px;
 }
 
 [class*="btn-"] {
 	width: 140px;
-	padding: 12px 0;
 	display: inline-block;
 	color: #fff;
 	background: #fb565a;
@@ -403,7 +407,7 @@ input[type="radio"] {
 	font-weight: 500;
 	font-size: 12px;
 	font-family: "Roboto", "Arial", sans-serif;
-	line-height: 18px;
+	line-height: 38px;
 	vertical-align: top;
 	text-align: center;
 	border: none;
@@ -435,7 +439,7 @@ input[type="radio"] {
 
 .promo {
 	min-height: 403px;
-	padding-top: 69px;
+	padding-top: 70px;
 	border-bottom: 2px solid #eee;
 	/*box-shadow: 0 0 0 1px #7455ad;
 	background-color: rgba(255,227,0,0.2);*/
@@ -445,7 +449,8 @@ input[type="radio"] {
 	font-size: 36px;
 	font-weight: 500;
 	line-height: 36px;
-	margin-bottom: 16px;
+	margin-bottom: 19px;
+	letter-spacing: 0.1px;
 }
 
 .promo-left {
@@ -457,7 +462,7 @@ input[type="radio"] {
 
 .promo .title {
 	display: inline-block;
-	margin-top: 42px;
+	margin-top: 29px;
 	margin-bottom: 12px;
 	text-transform: uppercase;
 }
@@ -485,7 +490,9 @@ input[type="radio"] {
 }
 
 .main-logo {
-	margin: 0 auto;
+	margin-left: 31px;
+	margin-top: -11px;
+	/*margin: 0 auto;*/
 	width: 188px;
 	height: 77px;
 	background: url(../img/main-logo.png) no-repeat;
@@ -493,8 +500,8 @@ input[type="radio"] {
 
 .since {
 	position: relative;
-	margin-top: 10px;
-	margin-bottom: 22px;
+	margin-top: 24px;
+	margin-bottom: 34px;
 	text-align: center;
 }
 
@@ -525,7 +532,7 @@ input[type="radio"] {
 .partners {
 	font-size: 0;
 	padding-top: 45px;
-	margin-bottom: 85px;
+	margin-bottom: 81px;
 	min-height: 121px;
 	border-bottom: 2px solid #eee;
 	text-align: center;
@@ -722,7 +729,7 @@ button.btn-show {
 	width: 155px;
 	margin-top: 38px;
 	color: #000;
-	line-height: 14px;
+	line-height: 38px;
 	background-color: #f1f1f1;
 }
 
@@ -960,7 +967,7 @@ button.btn-price {
 
 .paginator.btn-next {
 	color: #000;
-	line-height: 14px;
+	line-height: 38px;
 	background-color: #f1f1f1;
 }
 /*----------------------------------------*/
@@ -988,7 +995,7 @@ button.btn-price {
 .contact-us h2 {
 	font-size: 16px;
 	font-weight: 500;
-	line-height: 30px;
+	line-height: 25px;
 	margin-bottom: 13px;
 }
 
@@ -997,7 +1004,7 @@ button.btn-price {
 	font-weight: 500;
 	line-height: 20px;
 	color: #666;
-	margin-bottom: 18px;	
+	margin-bottom: 20px;	
 }
 
 span.phone {
@@ -1023,10 +1030,10 @@ span.phone {
 
 .btn.btn-contact {
 	position: relative;
-	width: 206px;
-	padding: 13px 0;
+	width: 205px;
+	/*padding: 13px 0;*/
 	text-align: center;
-	line-height: 12px;
+	line-height: 38px;
 }
 
 .page-footer {
@@ -1052,12 +1059,17 @@ span.phone {
 	width: 62px;
 	height: 62px;
 	display: inline-block;
-	margin-right: 27px;
+	margin-right: 26px;
 	text-decoration: none;
 	border-radius: 50%;
 	color: #fff;
 	background: #e1e1e1;
 }
+
+.social a:nth-child(2) {
+	margin-right: 21px; 
+}
+
 
 .social a:hover {
 	background-color: #fb565a;
@@ -1071,7 +1083,7 @@ span.phone {
 .icon-vk:before {
 	content: '\76';
 	position: absolute;
-	top: 19px;
+	top: 20px;
 	left: 18px;
 	font-size: 1.4em;
 } /* 'v' */
@@ -1079,8 +1091,8 @@ span.phone {
 .icon-facebook:before { 
 	content: '\66'; 
 	position: absolute;
-	top: 19px;
-	left: 18px;
+	top: 20px;
+	left: 19px;
 	font-size: 1.4em;
 } /* 'f' */
 
@@ -1088,12 +1100,19 @@ span.phone {
 	content: '📷'; 
 	position: absolute;
 	top: 20px;
-	left: 19px;
+	left: 20px;
 	font-size: 1.4em;
 }
 
 .footer-slogan {
 	float: left;
+}
+
+.footer-slogan h2 {
+	font-weight: 500;
+	line-height: 36px;
+	margin-bottom: 11px;
+	letter-spacing: 0.1px;
 }
 
 
