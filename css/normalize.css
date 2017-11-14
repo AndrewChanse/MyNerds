@@ -274,16 +274,16 @@ select { /* 1 */
  * 2. Correct the inability to style clickable types in iOS and Safari.
  */
 
-button,
-html [type="button"], /* 1 */
+/*button,
+html [type="button"],
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button; /* 2 */
-}
 
-/**
- * Remove the inner border and padding in Firefox.
- */
+
+
+/* * Remove the inner border and padding in Firefox.*/
+
 
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
@@ -308,9 +308,9 @@ button:-moz-focusring,
  * Correct the padding in Firefox.
  */
 
-fieldset {
+/*fieldset {
   padding: 0.35em 0.75em 0.625em;
-}
+}*/
 
 /**
  * 1. Correct the text wrapping in Edge and IE.
@@ -390,10 +390,10 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 
-::-webkit-file-upload-button {
+/*::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
-}
+  /*font: inherit; /* 2 */
+
 
 /* Interactive
    ========================================================================== */
